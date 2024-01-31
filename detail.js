@@ -10,10 +10,12 @@ async function getProduct(id) {
     console.log(product);
     details.innerHTML = 
     `
-    <div>
+    <div class="product">
     <h2>${product.title}</h2>
     <p>${product.description}</p>
+    <div class="images">
     ${product.images.map(image => `<img src="${image}" alt="img">`).join(' ')}
+    <div class="images">
     </div>
     `   
 }
@@ -33,13 +35,14 @@ async function getProductByAxios(id) {
     console.log(productByAxios);
     detailsByAxios.innerHTML = 
     `
-    <div>
-    <h2>${productByAxios.title}</h2>
+    <div class="product">
+    <h2>${productByAxios.title} By Axios</h2>
     <p>${productByAxios.description}</p>
+    <div class="images">
     ${productByAxios.images.map(image => `<img src="${image}" alt="img">`).join(' ')}
     </div>
+    </div>
     `   
-    
    
 }
 getProductByAxios(id);

@@ -8,8 +8,8 @@ async function getProducts() {
         return `
         
 
-            <div>
-                <img src="${product.thumbnail}"</img>
+        <div class="product">
+        <img src="${product.thumbnail}"</img>
                 <h3>${product.title}</h3>
                 <h4>${product.price} $</h4>
                 <a href="product.html?id=${product.id}">See More</a>
@@ -36,7 +36,7 @@ async function getProductsByAxios() {
     const result = productsByAxios.map(function (product) {
         return `
 
-            <div>
+            <div class="product">
                 <img src="${product.thumbnail}"</img>
                 <h3>${product.title}</h3>
                 <h4>${product.price} $</h4>
