@@ -11,7 +11,7 @@ async function getProducts() {
                 <img src="${product.thumbnail}" class="card-top-img w-100"</img>
                 <h3>${product.title}</h3>
                 <h4>${product.price} $</h4>
-                <a href="#">See More</a>
+                <a href="product.html?id=${product.id}">See More</a>
                 </div>
                 </div>
             </div>
